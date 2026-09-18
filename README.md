@@ -5,7 +5,7 @@ A CCTV-based video classifier that grades weather severity into 5 classes — `C
 Temporal Shift Modules (TSM) for cheap temporal reasoning across 16 sampled frames.
 
 This is the **fog-density / weather-severity model** referenced in the sibling
-[`fog_mine_yolov8`](../fog_mine_yolov8) repo's architecture diagram: that repo finds *what and where*
+[`HEMM_DETECTION_yolov8n`](../HEMM_DETECTION_yolov8n) repo's architecture diagram: that repo finds *what and where*
 (human / vehicle / obstacle); this repo answers *how bad are conditions right now*, so a downstream
 alert/dashboard can combine both — e.g. tightening a distance/TTC safety margin when this model reports
 `Fog Heavy`.
