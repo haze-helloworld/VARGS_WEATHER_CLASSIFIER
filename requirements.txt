@@ -1,0 +1,37 @@
+# Core ML / model
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data / numerics
+numpy
+pandas
+scikit-learn
+
+# Image / video handling
+opencv-python
+
+# Plotting (used by src/evaluate.py)
+matplotlib
+seaborn
+
+# Progress bars
+tqdm
+
+# Backend API server (app.py)
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart   # required by FastAPI for file uploads (UploadFile)
+pydantic>=2.0.0
+
+# ---------------------------------------------------------------------------
+# Install with:
+#     pip install -r requirements.txt
+#
+# NOTE ON GPU SUPPORT:
+# The default `torch`/`torchvision` install above is CPU-only on most
+# platforms. This is a video model - training and even TTA evaluation on
+# CPU is slow. If your machine has an NVIDIA GPU, install a CUDA-enabled
+# PyTorch build first by following the selector at:
+#     https://pytorch.org/get-started/locally/
+# then re-run `pip install -r requirements.txt`.
+# ---------------------------------------------------------------------------

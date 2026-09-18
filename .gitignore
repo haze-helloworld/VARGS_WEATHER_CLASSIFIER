@@ -1,0 +1,34 @@
+# ---------------------------------------------------------------------------
+# Large / generated files - do NOT commit these directly to a normal git
+# repo. See README.md "Sharing your trained model" section for how to
+# distribute checkpoints to teammates or judges instead (GitHub Release,
+# Git LFS, or a cloud link).
+# ---------------------------------------------------------------------------
+checkpoints/*.pth
+checkpoints/*.onnx
+*.pt
+*.onnx
+
+# Dataset - large and/or not yours to redistribute. Link its source in
+# the README instead of committing it.
+VARG_Dataset/
+
+# ---------------------------------------------------------------------------
+# Standard Python housekeeping
+# ---------------------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/
